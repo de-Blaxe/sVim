@@ -10,6 +10,7 @@
       // Keep track of the last active tabs
       sVimGlobal.lastActiveTabs = [];
       // Keep track of windows
+      // PORT: possibly unnecessary as the api doesn't allow for activation of other windows.
       sVimGlobal.browserWindows = safari.application.browserWindows;
       // Set path to sVimrc.html
       sVimGlobal.sVimrcPageUrl = safari.extension.baseURI + "sVimrc.html"
@@ -18,6 +19,7 @@
       // Define commands that can be run
       sVimGlobal.commands = {
         // Open Safari reader if possible
+        // PORT: No api for activating reader
         toggleReader: function() {
           if (safari.application.activeBrowserWindow.activeTab.reader.visible) {
             safari.application.activeBrowserWindow.activeTab.reader.exit();

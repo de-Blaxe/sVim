@@ -59,6 +59,7 @@ sVimHelper.scrollBy = function(x, y) {
     if (toScroll != 0) {
       if (y) {
         window.scrollBy(0, toScroll);
+        console.log("injection script on " + document.location.href);
       } else {
         window.scrollBy(toScroll, 0);
       }
@@ -73,6 +74,7 @@ sVimHelper.scrollBy = function(x, y) {
   }
 
   // Start scroll
+  
   animLoop();
 };
 

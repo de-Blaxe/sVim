@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		447F046D23065D4F00685364 /* sVimPort.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 447F046C23065D4F00685364 /* sVimPort.entitlements */; };
+		447F046F23065D4F00685364 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F046E23065D4F00685364 /* AppDelegate.swift */; };
+		447F047223065D4F00685364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 447F047023065D4F00685364 /* Main.storyboard */; };
+		447F047423065D4F00685364 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F047323065D4F00685364 /* ViewController.swift */; };
+		447F047623065D5000685364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447F047523065D5000685364 /* Assets.xcassets */; };
+		447F047D23065D5000685364 /* sVimPort Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 447F047C23065D5000685364 /* sVimPort Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		447F048223065D5000685364 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447F048123065D5000685364 /* Cocoa.framework */; };
+		447F048523065D5000685364 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F048423065D5000685364 /* SafariExtensionHandler.swift */; };
+		447F048723065D5000685364 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F048623065D5000685364 /* SafariExtensionViewController.swift */; };
+		447F048A23065D5000685364 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 447F048823065D5000685364 /* SafariExtensionViewController.xib */; };
+		447F048D23065D5000685364 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 447F048C23065D5000685364 /* script.js */; };
+		447F048F23065D5000685364 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 447F048E23065D5000685364 /* ToolbarItemIcon.pdf */; };
+		447F04A023065E1E00685364 /* sVimHelper.js in Resources */ = {isa = PBXBuildFile; fileRef = 447F049B23065E1E00685364 /* sVimHelper.js */; };
+		447F04A123065E1E00685364 /* sVimHint.js in Resources */ = {isa = PBXBuildFile; fileRef = 447F049C23065E1E00685364 /* sVimHint.js */; };
+		447F04A223065E1E00685364 /* mousetrap.js in Resources */ = {isa = PBXBuildFile; fileRef = 447F049D23065E1E00685364 /* mousetrap.js */; };
+		447F04A323065E1E00685364 /* sVimTab.js in Resources */ = {isa = PBXBuildFile; fileRef = 447F049E23065E1E00685364 /* sVimTab.js */; };
+		447F04A423065E1E00685364 /* ace in Resources */ = {isa = PBXBuildFile; fileRef = 447F049F23065E1E00685364 /* ace */; };
+		447F04A723065E6A00685364 /* sVim.css in Resources */ = {isa = PBXBuildFile; fileRef = 447F04A623065E6A00685364 /* sVim.css */; };
+		447F04AB23065E9100685364 /* sVimrc.html in Resources */ = {isa = PBXBuildFile; fileRef = 447F04A923065E9100685364 /* sVimrc.html */; };
+		447F04AC23065E9100685364 /* sVimGlobal.html in Resources */ = {isa = PBXBuildFile; fileRef = 447F04AA23065E9100685364 /* sVimGlobal.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		447F047E23065D5000685364 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 447F046123065D4F00685364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 447F047B23065D5000685364;
+			remoteInfo = "sVimPort Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		447F049623065D5000685364 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				447F047D23065D5000685364 /* sVimPort Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		447F046923065D4F00685364 /* sVimPort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sVimPort.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		447F046C23065D4F00685364 /* sVimPort.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sVimPort.entitlements; sourceTree = "<group>"; };
+		447F046E23065D4F00685364 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		447F047123065D4F00685364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		447F047323065D4F00685364 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		447F047523065D5000685364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		447F047723065D5000685364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447F047C23065D5000685364 /* sVimPort Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "sVimPort Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		447F048123065D5000685364 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		447F048423065D5000685364 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		447F048623065D5000685364 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		447F048923065D5000685364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		447F048B23065D5000685364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447F048C23065D5000685364 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		447F048E23065D5000685364 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		447F049023065D5000685364 /* sVimPort_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sVimPort_Extension.entitlements; sourceTree = "<group>"; };
+		447F049B23065E1E00685364 /* sVimHelper.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sVimHelper.js; sourceTree = "<group>"; };
+		447F049C23065E1E00685364 /* sVimHint.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sVimHint.js; sourceTree = "<group>"; };
+		447F049D23065E1E00685364 /* mousetrap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mousetrap.js; sourceTree = "<group>"; };
+		447F049E23065E1E00685364 /* sVimTab.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sVimTab.js; sourceTree = "<group>"; };
+		447F049F23065E1E00685364 /* ace */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ace; sourceTree = "<group>"; };
+		447F04A623065E6A00685364 /* sVim.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = sVim.css; path = ../../../sVim.safariextension/sVim.css; sourceTree = "<group>"; };
+		447F04A923065E9100685364 /* sVimrc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = sVimrc.html; path = ../../../sVim.safariextension/sVimrc.html; sourceTree = "<group>"; };
+		447F04AA23065E9100685364 /* sVimGlobal.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = sVimGlobal.html; path = ../../../sVim.safariextension/sVimGlobal.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		447F046623065D4F00685364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447F047923065D5000685364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447F048223065D5000685364 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		447F046023065D4F00685364 = {
+			isa = PBXGroup;
+			children = (
+				447F046B23065D4F00685364 /* sVimPort */,
+				447F048323065D5000685364 /* sVimPort Extension */,
+				447F048023065D5000685364 /* Frameworks */,
+				447F046A23065D4F00685364 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		447F046A23065D4F00685364 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				447F046923065D4F00685364 /* sVimPort.app */,
+				447F047C23065D5000685364 /* sVimPort Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		447F046B23065D4F00685364 /* sVimPort */ = {
+			isa = PBXGroup;
+			children = (
+				447F046C23065D4F00685364 /* sVimPort.entitlements */,
+				447F046E23065D4F00685364 /* AppDelegate.swift */,
+				447F047023065D4F00685364 /* Main.storyboard */,
+				447F047323065D4F00685364 /* ViewController.swift */,
+				447F047523065D5000685364 /* Assets.xcassets */,
+				447F047723065D5000685364 /* Info.plist */,
+			);
+			path = sVimPort;
+			sourceTree = "<group>";
+		};
+		447F048023065D5000685364 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				447F048123065D5000685364 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		447F048323065D5000685364 /* sVimPort Extension */ = {
+			isa = PBXGroup;
+			children = (
+				447F04A823065E7A00685364 /* old_html */,
+				447F04A523065E5B00685364 /* css */,
+				447F049A23065D9D00685364 /* js */,
+				447F048423065D5000685364 /* SafariExtensionHandler.swift */,
+				447F048623065D5000685364 /* SafariExtensionViewController.swift */,
+				447F048823065D5000685364 /* SafariExtensionViewController.xib */,
+				447F048B23065D5000685364 /* Info.plist */,
+				447F048C23065D5000685364 /* script.js */,
+				447F048E23065D5000685364 /* ToolbarItemIcon.pdf */,
+				447F049023065D5000685364 /* sVimPort_Extension.entitlements */,
+			);
+			path = "sVimPort Extension";
+			sourceTree = "<group>";
+		};
+		447F049A23065D9D00685364 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				447F049F23065E1E00685364 /* ace */,
+				447F049D23065E1E00685364 /* mousetrap.js */,
+				447F049B23065E1E00685364 /* sVimHelper.js */,
+				447F049C23065E1E00685364 /* sVimHint.js */,
+				447F049E23065E1E00685364 /* sVimTab.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		447F04A523065E5B00685364 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				447F04A623065E6A00685364 /* sVim.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		447F04A823065E7A00685364 /* old_html */ = {
+			isa = PBXGroup;
+			children = (
+				447F04AA23065E9100685364 /* sVimGlobal.html */,
+				447F04A923065E9100685364 /* sVimrc.html */,
+			);
+			path = old_html;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		447F046823065D4F00685364 /* sVimPort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447F049723065D5000685364 /* Build configuration list for PBXNativeTarget "sVimPort" */;
+			buildPhases = (
+				447F046523065D4F00685364 /* Sources */,
+				447F046623065D4F00685364 /* Frameworks */,
+				447F046723065D4F00685364 /* Resources */,
+				447F049623065D5000685364 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				447F047F23065D5000685364 /* PBXTargetDependency */,
+			);
+			name = sVimPort;
+			productName = sVimPort;
+			productReference = 447F046923065D4F00685364 /* sVimPort.app */;
+			productType = "com.apple.product-type.application";
+		};
+		447F047B23065D5000685364 /* sVimPort Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447F049323065D5000685364 /* Build configuration list for PBXNativeTarget "sVimPort Extension" */;
+			buildPhases = (
+				447F047823065D5000685364 /* Sources */,
+				447F047923065D5000685364 /* Frameworks */,
+				447F047A23065D5000685364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sVimPort Extension";
+			productName = "sVimPort Extension";
+			productReference = 447F047C23065D5000685364 /* sVimPort Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		447F046123065D4F00685364 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Donald Lieu";
+				TargetAttributes = {
+					447F046823065D4F00685364 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					447F047B23065D5000685364 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 447F046423065D4F00685364 /* Build configuration list for PBXProject "sVimPort" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 447F046023065D4F00685364;
+			productRefGroup = 447F046A23065D4F00685364 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				447F046823065D4F00685364 /* sVimPort */,
+				447F047B23065D5000685364 /* sVimPort Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		447F046723065D4F00685364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447F046D23065D4F00685364 /* sVimPort.entitlements in Resources */,
+				447F047623065D5000685364 /* Assets.xcassets in Resources */,
+				447F047223065D4F00685364 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447F047A23065D5000685364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447F04AB23065E9100685364 /* sVimrc.html in Resources */,
+				447F04A323065E1E00685364 /* sVimTab.js in Resources */,
+				447F048F23065D5000685364 /* ToolbarItemIcon.pdf in Resources */,
+				447F04A723065E6A00685364 /* sVim.css in Resources */,
+				447F04A223065E1E00685364 /* mousetrap.js in Resources */,
+				447F04A123065E1E00685364 /* sVimHint.js in Resources */,
+				447F04AC23065E9100685364 /* sVimGlobal.html in Resources */,
+				447F04A423065E1E00685364 /* ace in Resources */,
+				447F048A23065D5000685364 /* SafariExtensionViewController.xib in Resources */,
+				447F048D23065D5000685364 /* script.js in Resources */,
+				447F04A023065E1E00685364 /* sVimHelper.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		447F046523065D4F00685364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447F047423065D4F00685364 /* ViewController.swift in Sources */,
+				447F046F23065D4F00685364 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447F047823065D5000685364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447F048723065D5000685364 /* SafariExtensionViewController.swift in Sources */,
+				447F048523065D5000685364 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		447F047F23065D5000685364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 447F047B23065D5000685364 /* sVimPort Extension */;
+			targetProxy = 447F047E23065D5000685364 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		447F047023065D4F00685364 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				447F047123065D4F00685364 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		447F048823065D5000685364 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				447F048923065D5000685364 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		447F049123065D5000685364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		447F049223065D5000685364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		447F049423065D5000685364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "sVimPort Extension/sVimPort_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MBGAAQZU2;
+				INFOPLIST_FILE = "sVimPort Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.sVimPort-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		447F049523065D5000685364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "sVimPort Extension/sVimPort_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9MBGAAQZU2;
+				INFOPLIST_FILE = "sVimPort Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.sVimPort-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		447F049823065D5000685364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sVimPort/sVimPort.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9MBGAAQZU2;
+				INFOPLIST_FILE = sVimPort/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.sVimPort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		447F049923065D5000685364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sVimPort/sVimPort.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9MBGAAQZU2;
+				INFOPLIST_FILE = sVimPort/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.sVimPort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		447F046423065D4F00685364 /* Build configuration list for PBXProject "sVimPort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447F049123065D5000685364 /* Debug */,
+				447F049223065D5000685364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		447F049323065D5000685364 /* Build configuration list for PBXNativeTarget "sVimPort Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447F049423065D5000685364 /* Debug */,
+				447F049523065D5000685364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		447F049723065D5000685364 /* Build configuration list for PBXNativeTarget "sVimPort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447F049823065D5000685364 /* Debug */,
+				447F049923065D5000685364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 447F046123065D4F00685364 /* Project object */;
+}

@@ -4,6 +4,7 @@
     <title>sVimGlobal</title>
     <script>
       // Create global object
+      // PORT:  The SafariExtensionHandler object gets created and destroyed frequently during Safari’s lifetime, we will need to wrap the object in a singleton class outside of the SEH class
       var sVimGlobal = {};
       // Array of previously closed tabs
       sVimGlobal.lastClosedTabs = [];
@@ -39,6 +40,7 @@
         },
 
         // Load sVimrc
+        // PORT: maybe make this an injected js file?
         loadsVimrc: function() {
           sVimGlobal.sVimrc = {};
 
@@ -307,6 +309,7 @@
         },
 
         // Navigate to the next window
+        // PORT: Not possible with new api
         nextWindow: function() {
           var browserWindow = safari.application.activeBrowserWindow;
 
@@ -327,7 +330,7 @@
           }
           sVimGlobal.browserWindows[i].activate();
         },
-
+ 
         // Load settings from default/custom
         loadSettings: function() {
           sVimGlobal.loadDefaultSettings();

@@ -20,8 +20,7 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
         switch messageName {
-        case ActionType.openNewTab.rawValue:
-            
+            case ActionType.openNewTab
         }
         // This method will be called when a content script provided by your extension calls safari.extension.dispatchMessage("message").
         page.getPropertiesWithCompletionHandler { properties in

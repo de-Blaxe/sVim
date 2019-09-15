@@ -32,7 +32,19 @@
 		<array>
 			<dict>
 				<key>Script</key>
-				<string>script.js</string>
+				<string>mousetrap.js</string>
+			</dict>
+			<dict>
+				<key>Script</key>
+				<string>sVimHelper.js</string>
+			</dict>
+			<dict>
+				<key>Script</key>
+				<string>sVimHint.js</string>
+			</dict>
+			<dict>
+				<key>Script</key>
+				<string>sVimTab.js</string>
 			</dict>
 		</array>
 		<key>SFSafariToolbarItem</key>
@@ -53,7 +65,7 @@
 				<string>*.webkit.org</string>
 			</array>
 			<key>Level</key>
-			<string>Some</string>
+			<string>All</string>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>

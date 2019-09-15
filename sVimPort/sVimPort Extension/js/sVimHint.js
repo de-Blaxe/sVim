@@ -356,3 +356,5 @@ sVimHint.start = function(newTab) {
   hahInit();
   hahDraw();
 };
+
+

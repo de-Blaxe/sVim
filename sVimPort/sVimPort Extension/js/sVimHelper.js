@@ -150,5 +150,3 @@ sVimHelper.inIframe = function () {
     return true;
   }
 }
-
-

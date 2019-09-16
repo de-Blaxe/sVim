@@ -511,6 +511,3 @@
         sVimTab.bind();
       }
     }, false);
-
-
-

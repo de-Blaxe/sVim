@@ -11,10 +11,10 @@ import SafariServices
 enum ActionType: String {
     case sendSettings
     case openLinkInTab
-    case openNewTab
+    case newTab
     case nextTab
-    case backTab
-    case closeTab
+    case previousTab
+    case quit
 }
 
 struct settings {
@@ -159,16 +159,16 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
             let url = URL(string: userInfo?["url"] as! String)
             openInNewTab(url: url!)
             break
-        case ActionType.openNewTab.rawValue:
+        case ActionType.newTab.rawValue:
             openNewTab()
             break
         case ActionType.nextTab.rawValue:
             changeTab(direction: "forward")
             break
-        case ActionType.backTab.rawValue:
+        case ActionType.previousTab.rawValue:
             changeTab(direction: "backward")
             break
-        case ActionType.closeTab.rawValue:
+        case ActionType.quit.rawValue:
             closeTab()
             break
         default:
@@ -187,14 +187,14 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     func openNewTab() {
         // Ideally this URL would be something that represents an empty tab better than localhost
         SFSafariExtension.getBaseURI { baseURI in
-            let url = baseURI?.appendingPathComponent("sVimrc.html")
+            //let url = baseURI?.appendingPathComponent("sVimrc.html")
+            let url = URL(string: "https://google.com")
             SFSafariApplication.getActiveWindow(completionHandler: {
                 $0?.openTab(with: url!, makeActiveIfPossible: true, completionHandler: {_ in
                     // Perform some action here after the page loads
                 })
             })
         }
-        //let url = URL(string: "https://online.bonjourr.fr")!
         
     }
     

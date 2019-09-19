@@ -1,6 +1,7 @@
 
 // Create tab object
-    var sVimTab = {};
+var sVimTab = {};
+document.addEventListener("DOMContentLoaded", function(event) {
     //setTimeout(function(){
     // Settings passed in from global
     sVimTab.settings = {};
@@ -496,7 +497,7 @@
       }
 
       return false;
-    };                                 
+    };
     
     
     // Init sVimTab
@@ -511,3 +512,4 @@
         sVimTab.bind();
       }
     }, false);
+  });

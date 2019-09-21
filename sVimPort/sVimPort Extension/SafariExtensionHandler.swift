@@ -12,6 +12,7 @@ enum ActionType: String {
     case sendSettings
     case openLinkInTab
     case newTab
+    case newTabBackground
     case nextTab
     case previousTab
     case quit
@@ -59,7 +60,7 @@ struct settings {
         "hintcharacters"        : "asdfgqwertzxcvb",
         "homeurl"               : "topsites://",
         "mapleader"             : "\\",
-        "newtaburl"             : "topsites://",
+        "newtaburl"             : "https://www.google.com",
         "blacklists"            : [],
         "nextpagetextpatterns"  : ["(Next)(\\s>)?"],
         "prevpagetextpatterns"  : ["Prev(ious)?"],
@@ -160,7 +161,10 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
             openInNewTab(url: url!)
             break
         case ActionType.newTab.rawValue:
-            openNewTab()
+            openInNewTab(url: URL(string: userInfo!["link"] as! String)!)
+            break
+        case ActionType.newTabBackground.rawValue:
+            openInNewBackgroundTab(url: URL(string: userInfo!["link"] as! String)!)
             break
         case ActionType.nextTab.rawValue:
             changeTab(direction: "forward")
@@ -177,6 +181,14 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
     
     func openInNewTab(url: URL) {
+        SFSafariApplication.getActiveWindow(completionHandler: {
+            $0?.openTab(with: url, makeActiveIfPossible: true, completionHandler: {_ in
+                // Perform some action here after the page loads
+            })
+        })
+    }
+    
+    func openInNewBackgroundTab(url: URL) {
         SFSafariApplication.getActiveWindow(completionHandler: {
             $0?.openTab(with: url, makeActiveIfPossible: false, completionHandler: {_ in
                 // Perform some action here after the page loads

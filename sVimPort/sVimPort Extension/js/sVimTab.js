@@ -201,7 +201,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       // Open new tab
       newTab: function(url) {
-        safari.extension.dispatchMessage("newTab", url);
+        console.log("newTab")
+        safari.extension.dispatchMessage("newTab", {"link" : sVimTab.settings.newtaburl});
       },
 
       // Open new tab in background
@@ -304,8 +305,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       // Open link in new background tab
       createTabbedHint: function() {
-        var openUrl = function(url) {
-          safari.extension.dispatchMessage("newTabBackground", url);
+        var openUrl = function(url) {                                    
+          safari.extension.dispatchMessage("newTabBackground", {"link": url});
+          console.log(url)
         };
         sVimHint.start(openUrl);
       },
